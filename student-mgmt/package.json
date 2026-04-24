@@ -7,6 +7,9 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -17,15 +20,6 @@
   "devDependencies": {
     "nodemon": "^3.0.2"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "author": "CSC-251 Student",
   "license": "MIT"
-}
-{
-  "scripts": {
-    "start": "node server.js",
-    "dev":   "nodemon server.js"
-  }
 }
