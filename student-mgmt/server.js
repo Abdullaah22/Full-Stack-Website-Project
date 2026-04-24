@@ -69,6 +69,8 @@ app.listen(PORT, () => {
   console.log(`\n  ENV: ${process.env.NODE_ENV || 'development'}`);
   console.log('========================================\n');
 });
+const { requestLogger } = require('./middleware');
+const studentRoutes     = require('./routes/students');
 
 module.exports = app;
 const PORT = process.env.PORT || 3000;
