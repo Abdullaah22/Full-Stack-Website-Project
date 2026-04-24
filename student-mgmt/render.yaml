@@ -1,0 +1,15 @@
+# render.yaml — Render Deployment Configuration
+# Deploy this project on render.com with zero config
+
+services:
+  - type: web
+    name: student-management-system
+    env: node
+    region: singapore           # Closest to Pakistan
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
